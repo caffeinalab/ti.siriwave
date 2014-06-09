@@ -3,7 +3,7 @@ com.caffeinalab.titanium.siriwave
 
 ![image](http://f.cl.ly/items/2q0I101D2t0p0W1Y0215/SWave.gif)
 
-### [Live CodePen Example](http://cdpn.io/yfegd)
+## [https://github.com/CaffeinaLab/SiriWaveJS](Original documentation)
 
 ## Installation
 
