@@ -1,11 +1,14 @@
 com.caffeinalab.titanium.siriwave
 =================================
 
+## iPhone Simulator Screenshot
 ![image](http://f.cl.ly/items/33042k0o1R2K2y0S321g/Image%202014-06-09%20at%201.11.05%20pm.png)
+
+
+##[Original controller in JS](https://github.com/CaffeinaLab/SiriWaveJS)
 
 ![image](http://f.cl.ly/items/2q0I101D2t0p0W1Y0215/SWave.gif)
 
-[Original controller in JS](https://github.com/CaffeinaLab/SiriWaveJS)
 
 ## Installation
 
