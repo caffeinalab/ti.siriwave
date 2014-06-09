@@ -12,6 +12,7 @@ function init() {
 	var html = '<!DOCTYPE html><html><head>';
 	html += '<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />';
 	html += '<style>html, body { margin: 0; padding: 0; }</style>';
+	html += '<script src="'+WPATH("SiriWaveJS/raf.js")+'"></script>';
 	html += '<script src="'+WPATH("SiriWaveJS/siriwave.js")+'"></script>';
 	html += '</head><body><script>';
 

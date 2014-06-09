@@ -1,9 +1,11 @@
 com.caffeinalab.titanium.siriwave
 =================================
 
+![image](http://f.cl.ly/items/33042k0o1R2K2y0S321g/Image%202014-06-09%20at%201.11.05%20pm.png)
+
 ![image](http://f.cl.ly/items/2q0I101D2t0p0W1Y0215/SWave.gif)
 
-## [https://github.com/CaffeinaLab/SiriWaveJS](Original documentation)
+[Original controller in JS](https://github.com/CaffeinaLab/SiriWaveJS)
 
 ## Installation
 
@@ -32,12 +34,12 @@ And add in your *config.json*, under `dependencies`:
 ### Require in the View
 
 ```xml
-<Widget src="com.caffeinalab.titanium.siriwave" id="siri" autostart="true" noise="1" color="#fff" />
+<Widget src="com.caffeinalab.titanium.siriwave" id="siri" autostart="true" noise="1" color="#fff" [args] />
 ```
 
-And stylize globally via **app.tss*:
+And stylize globally via *app.tss*:
 
-```
+```javascript
 "#caffeinaSiriWave" : {
 	width: 320,
 	height: 150,
@@ -46,7 +48,7 @@ And stylize globally via **app.tss*:
 	noise: 0.5
 }
 ```
-
+## 
 ### Options
 
 * **color**: The color of the wave
@@ -57,25 +59,25 @@ And stylize globally via **app.tss*:
 
 ### Control in Controller
 
-### Set the noise
+##### Set the noise
 
 ```javascript
 $.siri.setNoise([ 0...1 ])
 ```
 
-### Set the speed
+##### Set the speed
 
 ```javascript
-$.siri.setSpeed(0.4);
+$.siri.setSpeed(N);
 ```
 
-### Start the animation
+##### Start the animation
 
 ```javascript
 $.siri.start();
 ```
 
-### Stop the animation
+##### Stop the animation
 
 ```javascript
 $.siri.stop();
