@@ -21,7 +21,7 @@ gittio install com.caffeinalab.titanium.siriwave
 #### Via Github
 
 ```
-git clone git@github.com:CaffeinaLab/com.caffeinalab.titanium.siriwave.git app/widgets/com.caffeinalab.titanium.siriwave
+git clone --recursive git@github.com:CaffeinaLab/com.caffeinalab.titanium.siriwave.git app/widgets/com.caffeinalab.titanium.siriwave
 ```
 
 And add in your *config.json*, under `dependencies`:
@@ -51,7 +51,7 @@ And stylize globally via *app.tss*:
 	noise: 0.5
 }
 ```
-## 
+##
 ### Options
 
 * **color**: The color of the wave
