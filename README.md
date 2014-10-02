@@ -2,7 +2,7 @@
 
 ### com.caffeinalab.titanium.siriwave
 
-##[Original controller in JS](https://github.com/CaffeinaLab/SiriWaveJS)
+####[Watch the original script in JS](https://github.com/CaffeinaLab/SiriWaveJS)
 
 ![image](http://f.cl.ly/items/2q0I101D2t0p0W1Y0215/SWave.gif)
 
@@ -17,7 +17,7 @@ gittio install com.caffeinalab.titanium.siriwave
 
 #### Via Github
 
-Download the latest release in `app/widgets`, and in your *config.json*, under `dependencies` add:
+Download the latest release, unzip in `app/widgets`, and in your *config.json*, under `dependencies` add:
 
 ```
 "dependencies": {
@@ -45,33 +45,30 @@ And stylize globally via *app.tss*:
 }
 ```
 
-### Options
+## Constructor options
 
-* `color (String)`: The color of the wave
-* `autostart (Boolean)`: Autostart the wave?
-* `noise (Number, from 0 to 1)` The noise of the wave
-* `speed (Number, from 0 to N)` The speed of the wave
+#### `color` (String)
+The color of the wave
 
-#### Set the noise
+#### `autostart` (Boolean, default: `true`)
+Autostart the wave?
 
-```javascript
-$.siri.setNoise([ 0...1 ])
-```
+#### `noise` (Number, from `0` to `1`)
+The noise of the wave
 
-#### Set the speed
+#### `speed` (Number, from `0` to N)
+The speed of the wave
 
-```javascript
-$.siri.setSpeed(N);
-```
+## API
 
-#### Start the animation
+#### `setNoise([ 0...1 ])`
+Set the noise at runtime
 
-```javascript
-$.siri.start();
-```
+#### `setSpeed(N)`
+Set the speed at runtime
 
-#### Stop the animation
+#### `start()`
+Start the wave
 
-```javascript
-$.siri.stop();
-```
+#### `stop()`
+Stop the wave
