@@ -1,5 +1,7 @@
-".caffeinaSiriWave": {
+".siriWave": {
 	touchEnabled: false,
+	width: 320,
+	height: 150,
 	backgroundColor: 'transparent',
 	hideLoadIndicator: true,
 }

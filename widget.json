@@ -1,9 +1,9 @@
 {
 	"id": "com.caffeinalab.titanium.siriwave",
-	"name": "com.caffeinalab.titanium.siriwave",
-	"description" : "Controllable wave like Siri",
+	"name": "Ti.SiriWaveJS",
+	"description" : "SiriwaveJS porting for Titanium as Alloy widget.",
 	"author": "Flavio De Stefano",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"copyright":"Copyright (c) 2014",
 	"license":"Apache License, Version 2.0",
 	"min-alloy-version": "1.0",
