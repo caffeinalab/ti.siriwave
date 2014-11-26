@@ -10,8 +10,6 @@ function init() {
 	html += '<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />';
 	html += '<style>html,body{margin:0;padding:0;}</style>';
 	html += '</head><body>';
-	Ti.API.debug(args);
-
 	if (Ti.Shadow) {
 		html += '<script>' + Ti.Filesystem.getFile(WPATH("SiriWaveJS/siriwave.js")).read().text + '</script>';
 	} else {
