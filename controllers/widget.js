@@ -1,6 +1,6 @@
 var args = _.extend({
-	width: 320,
-	height: 150,
+	width: $.cfn_SiriWave.size.width || 320,
+	height: $.cfn_SiriWave.size.height || 150,
 	ratio: OS_ANDROID ? Ti.Platform.displayCaps.logicalDensityFactor : Ti.Platform.displayCaps.dpi/160
 }, arguments[0]);
 
@@ -10,19 +10,25 @@ function init() {
 	html += '<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />';
 	html += '<style>html,body{margin:0;padding:0;}</style>';
 	html += '</head><body>';
-	html += '<script src="'+WPATH("/SiriWaveJS/siriwave.js")+'"></script>';
+	Ti.API.debug(args);
+
+	if (Ti.Shadow) {
+		html += '<script>' + Ti.Filesystem.getFile(WPATH("SiriWaveJS/siriwave.js")).read().text + '</script>';
+	} else {
+		html += '<script src="' + WPATH("/SiriWaveJS/siriwave.js") + '"></script>';
+	}
 	html += '<script>window.SW = new SiriWave(' + JSON.stringify(args) + ');</script>';
 	html += '</body></html>';
-	$.siriWave.html = html;
+	$.cfn_SiriWave.html = html;
 }
 
 function call(fn, val) {
-	$.siriWave.evalJS('window.SW.' + fn + '(' + (val == null ? '' : JSON.stringify(val)) + ');');
+	$.cfn_SiriWave.evalJS('window.SW.' + fn + '(' + (val == null ? '' : JSON.stringify(val)) + ');');
 }
 exports.call = call;
 
 function set(prop, val) {
-	$.siriWave.evalJS('window.SW.' + prop + '=' + JSON.stringify(val));
+	$.cfn_SiriWave.evalJS('window.SW.' + prop + '=' + JSON.stringify(val));
 }
 exports.set = set;
 

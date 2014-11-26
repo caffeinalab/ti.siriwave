@@ -40,32 +40,32 @@ And stylize globally via *app.tss*:
 	width: 320,
 	height: 150,
 	backgroundColor: 'black',
-	borderColor: 'red',
 	noise: 0.5
 }
 ```
 
-## Constructor options
+## Properties
 
-#### `color` (String)
-The color of the wave
+#### `[speed]` (Number, from `0` to `1`, default: `0.1`)
 
-#### `autostart` (Boolean, default: `true`)
-Autostart the wave?
+The speed of the wave.
 
-#### `noise` (Number, from `0` to `1`)
-The noise of the wave
+#### `[amplitude]` (Number, from `0` to `1`, default: `1`)
 
-#### `speed` (Number, from `0` to N)
-The speed of the wave
+The noise (amplitude) of the wave.
+
+#### `[frequency]` (Number, from `0` to `N`, default: `1`)
+
+The noise (amplitude) of the wave.
+
+#### `[color]` (String, Color, default: `#fff')
+
+The color of the wave, in hexadecimal form (`#336699`, `#FF0`)
 
 ## API
 
-#### `setNoise([ 0...1 ])`
-Set the noise at runtime
-
-#### `setSpeed(N)`
-Set the speed at runtime
+#### `set(property, value)`
+Set the property at runtime
 
 #### `start()`
 Start the wave
