@@ -1,5 +1,7 @@
 # Ti.SiriWave
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CaffeinaLab/Ti.SiriWave?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### com.caffeinalab.titanium.siriwave
 
 ####[Watch the original script in JS](https://github.com/CaffeinaLab/SiriWaveJS)
