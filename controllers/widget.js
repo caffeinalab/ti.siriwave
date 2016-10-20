@@ -11,9 +11,9 @@ function init() {
 	html += '<style>html,body{margin:0;padding:0;}</style>';
 	html += '</head><body>';
 	if (Ti.Shadow) {
-		html += '<script>' + Ti.Filesystem.getFile(WPATH("SiriWaveJS/siriwave.js")).read().text + '</script>';
+		html += '<script>' + Ti.Filesystem.getFile(WPATH("/siriwave.jslocal")).read().text + '</script>';
 	} else {
-		html += '<script src="' + WPATH("/SiriWaveJS/siriwave.js") + '"></script>';
+		html += '<script src="' + WPATH("/siriwave.jslocal") + '"></script>';
 	}
 	html += '<script>window.SW = new SiriWave(' + JSON.stringify(args) + ');</script>';
 	html += '</body></html>';
